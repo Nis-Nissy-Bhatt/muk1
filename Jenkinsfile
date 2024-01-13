@@ -25,6 +25,8 @@ pipeline
             steps 
             {
                 echo 'Deploy App'
+                sh 'javac Test.java'
+                sh 'java Test'
             }
         }
     }
